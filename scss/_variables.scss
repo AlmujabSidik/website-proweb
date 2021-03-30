@@ -1,0 +1,119 @@
+// ==== FONT
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans&display=swap');
+
+$font-primary: "Nunito", sans-serif ;
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+$color-1 : #636972;
+$color-2: #fd8051;
+$color-bg: #ECF1F4;
+$color-heading: #3B3663;
+$color-p: #696687;
+$box-hover: 0px 8px 20px rgba(253, 128, 81, .7);
+
+.heading-1 {
+    font-size: 52px;
+    line-height: 60px;
+    font-weight: 700;
+    color: $color-heading;
+    margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+    
+}
+
+.heading-2 {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: $color-heading;
+}
+
+
+.heading-4 {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-heading;
+}
+
+.heading-5 {
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-2;
+}
+
+
+.p-primary {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $color-p;
+    margin: 0;
+    padding: 0;
+}
+
+.button-costum {
+    background: $color-2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 45px;
+    border-radius: 0px;
+
+    &:hover {
+        box-shadow: $box-hover;
+        color: #fff;
+    }
+}
+
+.button-icon {
+    padding: 10px 18px;
+    background-color: $color-2;
+    color: white;
+    transition: all .4s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        color: white;
+        background-color: #e87045;
+    }
+}
+
+
+// spacing
+.mt-124 {
+    margin-top: 124px;
+}
+
+.mt-190 {
+    margin-top: 190px;
+}
+.mt-45 {
+    margin-top: 45px;
+}
+
+
+body::-webkit-scrollbar {
+    width: 14px;           
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:#fff;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: $color-2;    
+    border: 3px solid $color-2;
+  }

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.heading-1 {
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #3B3663;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.heading-2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;
+  color: #3B3663;
+}
+
+.heading-4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #3B3663;
+}
+
+.heading-5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fd8051;
+}
+
+.p-primary {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #696687;
+  margin: 0;
+  padding: 0;
+}
+
+.button-costum {
+  background: #fd8051;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 45px;
+  border-radius: 0px;
+}
+
+.button-costum:hover {
+  box-shadow: 0px 8px 20px rgba(253, 128, 81, 0.7);
+  color: #fff;
+}
+
+.button-icon {
+  padding: 10px 18px;
+  background-color: #fd8051;
+  color: white;
+  transition: all .4s ease;
+}
+
+.button-icon:hover {
+  transform: translateY(-5px);
+  color: white;
+  background-color: #e87045;
+}
+
+.mt-124 {
+  margin-top: 124px;
+}
+
+.mt-190 {
+  margin-top: 190px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fd8051;
+  border: 3px solid #fd8051;
+}
+
+.navbar {
+  background: #fff !important;
+  padding: 20px 0px;
+}
+
+.navbar .nav-item .nav-link {
+  font-size: 15px;
+  font-weight: 400;
+  color: #636972;
+  padding: 0;
+  transition: all .3s ease;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: #fd8051;
+  transform: translateY(-5px);
+  transition: .3s ease;
+}
+
+.navbar .nav-item a {
+  font-family: "Nunito", sans-serif;
+}
+
+.navbar .nav-item a.active {
+  color: #fd8051 !important;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none !important;
+}
+
+.hero {
+  height: 768px;
+  background: #ECF1F4;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100%;
+    padding-top: 90px;
+  }
+  .hero .heading-1 {
+    font-size: 40px;
+  }
+}
+
+.hero span {
+  background: #D3E8e1;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 40px 0px 23px 40px;
+  color: #4e6570;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.hero .email-sub {
+  padding: 0px 0px 0px 12px;
+}
+
+.hero .btn-subs {
+  padding: 0px 0px 12px 0px;
+}
+
+.hero .form-control {
+  border-radius: 0px;
+  padding: 8px 12px;
+  box-shadow: none;
+}
+
+.hero .form-btn {
+  background: #fd8051;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 0px;
+}
+
+.hero .form-btn:hover {
+  box-shadow: 0px 8px 20px rgba(253, 128, 81, 0.7);
+}
+
+.work {
+  margin-bottom: 124px;
+}
+
+@media (max-width: 768px) {
+  .work {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.work .container {
+  width: 1024px;
+  margin-top: -70px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 40px rgba(86, 89, 113, 0.08);
+  border-radius: 6px;
+  padding: 25px 40px;
+}
+
+@media (max-width: 768px) {
+  .work .container {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .work .container .card {
+    padding: 20px auto;
+  }
+  .work .container .card img {
+    margin-bottom: 10px;
+  }
+}
+
+.work .container .card img {
+  width: 40px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.about {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .about .heading-2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+.services {
+  background-color: #F5F5F9;
+}
+
+.services .card {
+  padding: 40px 38px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 25px rgba(127, 131, 161, 0.06);
+  border: none;
+  border-radius: 6px;
+}
+
+.services .card-body {
+  padding: 20px 0px;
+}
+
+@media (max-width: 768px) {
+  .services .card {
+    margin: 0px auto;
+  }
+}
+
+.price {
+  background-color: #F5F5F9;
+  padding-top: 92px;
+  width: 100%;
+  height: 917px;
+}
+
+@media (max-width: 768px) {
+  .price {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.price .section-line {
+  margin: 20px auto;
+  width: 85px;
+  height: 4px;
+  border-radius: 10px;
+  background: #fd8051;
+  display: block;
+}
+
+.price .price-tab {
+  width: 320px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  padding: 58px 53px;
+}
+
+.price .price-tab:hover {
+  box-shadow: 0px 7px 25px rgba(86, 89, 113, 0.07);
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .price .price-tab {
+    margin: 0px auto;
+  }
+}
+
+.price .price-popular {
+  box-shadow: 0px 7px 25px rgba(86, 89, 113, 0.07);
+  width: 320px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 58px 53px;
+}
+
+.price .price-popular:hover {
+  box-shadow: 0px 7px 25px rgba(86, 89, 113, 0.11);
+}
+
+@media (max-width: 768px) {
+  .price .price-popular {
+    margin: 0px auto;
+  }
+}
+
+.form-work .form-control {
+  border-radius: 0px;
+  box-shadow: none !important;
+}
+
+footer {
+  background: #f8f2f2;
+  padding-top: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #636972;
+  font-family: "Nunito", sans-serif;
+}
+
+footer a:hover {
+  color: #fd8051;
+}
+
+footer .title-copy {
+  background-color: #fd8051;
+  color: #fff;
+  font-size: 16px;
+  height: 75px;
+}
+
+@media (max-width: 768px) {
+  footer .title-copy {
+    height: 52px;
+  }
+}
+
+footer .title-copy a {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    box-shadow: 0px 10px 25px rgba(127, 131, 161, 0.07);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 999;
+  }
+  .navbar .navbar-collapse {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 10px 25px rgba(127, 131, 161, 0.02);
+  }
+  .navbar .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+  .navbar .navbar-collapse.show {
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+  .navbar .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: left 500ms ease-in-out;
+  }
+  .navbar .navbar-toggler {
+    border: 0px;
+  }
+  .navbar .navbar-toggler:focus,
+  .navbar .navbar-toggler:active,
+  .navbar .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

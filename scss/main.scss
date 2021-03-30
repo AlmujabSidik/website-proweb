@@ -1,0 +1,342 @@
+@import "./variables";
+@import "./mixins";
+
+// ===== NAVBAR
+.navbar {
+    background: #fff !important;
+    padding: 20px 0px;
+    
+
+
+    .nav-item {
+
+        .nav-link {
+            font-size: 15px;
+            font-weight: 400;
+            color: $color-1;
+            // margin: 15px;
+            padding: 0;
+            transition: all .3s ease;
+
+            &:hover {
+                color: $color-2;
+                transform: translateY(-5px);
+                transition: .3s ease;
+            }
+        }
+
+        a {
+            font-family: $font-primary;
+            &.active {
+                color:$color-2 !important;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        &:focus {
+            outline: none !important;
+        }
+    }
+}
+// ===== END NAVBAR
+
+// ===== HERO
+.hero {
+    height: 768px;
+    background: $color-bg;
+
+    @include mobile {
+        height: 100%;
+        padding-top: 90px;
+
+        // img {
+        //     display: none;
+        // }
+
+        .heading-1 {
+            font-size: 40px;
+        }
+    }
+
+    span {
+        background: #D3E8e1;
+        display: inline-block;
+        padding: 15px;
+        border-radius:40px 0px 23px 40px;
+        color: #4e6570;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .email-sub {
+        padding: 0px 0px 0px 12px;
+       
+    }
+
+    .btn-subs {
+        padding: 0px 0px 12px 0px;
+    }
+    
+    .form-control {
+        border-radius: 0px;
+        padding: 8px 12px;
+        box-shadow: none;
+    }
+
+    .form-btn {
+        background: $color-2;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 12px;
+        border-radius: 0px;
+
+        &:hover {
+            box-shadow: $box-hover;
+        }
+    }
+}
+// ===== END HERO
+
+// ===== MAIN 
+
+.work {
+    margin-bottom: 124px;
+    @include mobile {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .container {
+        width: 1024px;
+        margin-top: -70px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 40px rgba(86, 89, 113, 0.08);
+        border-radius: 6px;
+        padding: 25px 40px;
+
+        @include mobile {
+            width: 100%;
+            margin-top: 50px;
+
+            .card {
+                padding: 20px auto;
+
+                img {
+                    margin-bottom: 10px;
+                }
+                
+            }
+        }
+
+        .card {
+            img {
+                width: 40px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+}
+
+.about {
+
+    width: 100%;
+    height: 100%;
+
+    @include mobile {
+        .heading-2 {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    }
+}
+
+.services {
+    background-color: #F5F5F9;
+
+    .card {
+        padding: 40px 38px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 25px rgba(127, 131, 161, 0.06);
+        border: none;
+        border-radius: 6px;   
+        
+        &-body {
+            padding: 20px 0px;
+        }
+
+        @include mobile {
+           margin: 0px auto;
+        }
+    }
+}
+
+.price {
+    background-color: #F5F5F9;
+    padding-top: 92px;
+    width: 100%;
+    height: 917px;
+
+    @include mobile {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-line {
+        margin: 20px auto;
+        width: 85px;
+        height: 4px;
+        border-radius: 10px;
+        background: $color-2;
+        display: block;
+    }
+    .price-tab {
+        width: 320px;
+        background-color: #fff;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 6px;
+        padding: 58px 53px;
+
+        &:hover {
+        box-shadow: 0px 7px 25px rgba(86, 89, 113, 0.07);
+        background-color: #fff;
+        }
+
+        @include mobile {
+            margin: 0px auto;
+        }
+    }
+
+    .price-popular {
+        box-shadow: 0px 7px 25px rgba(86, 89, 113, 0.07);
+        width: 320px;
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 58px 53px;
+
+        &:hover {
+        box-shadow: 0px 7px 25px rgba(86, 89, 113, 0.11);
+        }
+
+        @include mobile {
+            margin: 0px auto;
+        }
+    }
+}
+
+.form-work {
+
+
+        .form-control {
+        border-radius: 0px;
+        box-shadow: none !important;
+        }
+}
+
+
+
+
+// ===== END MAIN 
+
+// ===== FOOTER 
+footer {
+    background: #f8f2f2;
+    padding-top: 30px;
+    a {
+        text-decoration: none;
+        color: $color-1;
+        font-family: $font-primary;
+
+        &:hover {
+            color: $color-2;
+        }
+    }
+
+    .title-copy {
+        background-color: $color-2;
+        color: #fff;
+        font-size: 16px;
+        height: 75px;
+
+        @include mobile {
+            height: 52px;
+        }
+
+       
+
+        a {
+            color: #fff;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .navbar {
+        box-shadow: 0px 10px 25px rgba(127, 131, 161, 0.07);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 90px;
+        z-index: 999;
+        .navbar-collapse {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            width: 75%;
+            height: 100%;
+            background: #fff;
+            box-shadow: 0px 10px 25px rgba(127, 131, 161, 0.02);
+    
+        }
+    
+        .navbar-collapse.collapsing {
+            left: -75%;
+            transition: height 0s ease;
+        }
+    
+        .navbar-collapse.show {
+            left: 0;
+            transition: left 300ms ease-in-out;
+        }
+    
+        .navbar-toggler.collapsed ~ .navbar-collapse {
+            transition: left 500ms ease-in-out;
+        }
+    
+        .navbar-toggler {
+            border: 0px;
+        }
+        
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        }
+    }
+}
